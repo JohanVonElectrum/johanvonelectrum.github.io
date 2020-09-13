@@ -5,12 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JohanVonElectrum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/pages.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <h1>JohanVonElectrum</h1>
-    <h3>Survival a mi modo:</h3>
-    <a href="bluemap/index.html">Mapa 3D</a>
+    <header id="hero-spot">
+        <a href="/"><img src="JohanVonElectrum.png" alt="JohanVonElectrum" class="logo"></a>
+
+        <h1>Minecraft de un modo nunca visto.</h1>
+        <h2>Editar el codigo de Minecraft ahora es la principal mecánica.</h2>
+
+        <div class="social-nav">
+            <a href="https://www.twitch.tv/johanvonelectrum" class="button-link">Twitch</a>
+            <a href="https://www.youtube.com/channel/UC7VBv4WwBwNv60IazZVm0HQ" class="button-link">YouTube</a>
+            <a href="https://twitter.com/Johan_V_E" class="button-link">Twitter</a>
+        </div>
+
+        <div id="slideshow">
+            <img src="/images/slideshow/live_coding.png" alt="Live Coding" class="slide active" width="893">
+            <img src="/images/slideshow/carpet_farming.png" alt="Carpet Farming" class="slide" width="893">
+        </div>
+    </header>
+
+    <nav>
+        <div><a href="bluemap/index.html">Mapa Online</a></div>
+        <div><a href="https://github.com/JohanVonElectrum">GitHub</a></div>
+    </nav>
+
+    <section id="video" class="video">
+        <h1></h1>
+        <iframe src="https://player.twitch.tv/?channel=johanvonelectrum&parent=johanvonelectrum.github.io" frameborder="0" allowfullscreen="true" scrolling="no" width="853" height="480"></iframe>
+    </section>
+
+    <script>
+        window.slides = {
+            "coding":"Live Coding",
+            "carpet_farming":"Carpet Farming"
+        }
+    </script>
+    <script src="js/application.js"></script>
 </body>
 </html>
