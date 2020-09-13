@@ -715,7 +715,7 @@ footer .right {
  content:'\f007'
 }
 .octicon-check:before {
- content:'\f03a'
+ content:'\2714'
 }
 .octicon-link:before {
  content:'\f05c'
@@ -757,6 +757,12 @@ footer .right {
  margin-left:auto;
  margin-right:auto
 }
+
+/* My things */
+
+html {
+    scroll-behavior: smooth;
+}
 nav {
     border-top: 1px solid #2067ff;
     background-color: #161616;
@@ -774,8 +780,11 @@ nav a {
     margin: auto;
     transition: font-size 0.1s ease-in-out;
 }
-
 nav a:hover {
     font-size: 24px;
     transition: font-size 0.1s ease-in-out;
+}
+#twitch-bits {
+    background:#fff url("/images/twitch/bit.png") no-repeat right center;
+    background-size: auto;
 }

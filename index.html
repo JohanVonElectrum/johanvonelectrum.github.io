@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/pages.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
+
 <body>
     <header id="hero-spot">
         <a href="/"><img src="JohanVonElectrum.png" alt="JohanVonElectrum" class="logo"></a>
@@ -18,7 +20,9 @@
         <div class="social-nav">
             <a href="https://www.twitch.tv/johanvonelectrum" class="button-link">Twitch</a>
             <a href="https://www.youtube.com/channel/UC7VBv4WwBwNv60IazZVm0HQ" class="button-link">YouTube</a>
+            <a href="https://discord.gg/qEnjqeG" class="button-link">Discord</a>
             <a href="https://twitter.com/Johan_V_E" class="button-link">Twitter</a>
+            <a href="https://www.instagram.com/johanvonelectrum/" class="button-link">Instagram</a>
         </div>
 
         <div id="slideshow">
@@ -33,16 +37,86 @@
     </nav>
 
     <section id="video" class="video">
-        <h1></h1>
-        <iframe src="https://player.twitch.tv/?channel=johanvonelectrum&parent=johanvonelectrum.github.io" frameborder="0" allowfullscreen="true" scrolling="no" width="853" height="480"></iframe>
+        <h1>Encuentrame en <a href="https://www.twitch.tv/johanvonelectrum">Twitch</a></h1>
+        <iframe src="https://player.twitch.tv/?channel=johanvonelectrum&parent=johanvonelectrum.github.io"
+            frameborder="0" allowfullscreen="true" scrolling="no" width="853" height="480"></iframe>
+    </section>
+
+    <section id="tutorial" class="tutorial">
+        <h1>Preparado para comenzar? Disfruta al completo de toda la experiencia JohanVonElectrum.</h1>
+        <h2>Tienes distintas formas de acceder al contenido, <br>creado con vosotros y para vosotros. Comencemos.
+        </h2>
+
+        <ul class="tabs">
+            <li><a href="#twitch-site" class="selected">Twitch</a></li>
+            <li><a href="#youtube-site">YouTube</a></li>
+            <li><a href="#discord-site">Discord</a></li>
+            <li><a href="#twitter-site">Twitter</a></li>
+        </ul>
+
+        <ul id="twitch-site" class="tutorial-list wrapper active">
+            <li>
+                <h4>Crea una cuenta</h4>
+                <p>Dirígete a <a href="https://twitch.tv">Twitch</a> y crea una cuenta con el botón de arriba a la derecha.</p>
+
+                <p class="details">Si ya tienes una cuenta inicia sesión con el botón de arriba a la derecha. Si no ves ninguno de los dos botones puede que no estés en el <a href="http://twitch.tv">sitio adecuado</a> o que ya tengas una sesión iniciada.</p>
+            </li>
+
+            <li>
+                <h4>Únete a la comunidad</h4>
+                <p>Entra en <a href="https://twitch.tv/johanvonelectrum">mi canal</a> y haz click en <img src="images/twitch/follow.png" alt="Botón de seguir" style="vertical-align:middle">.</p>
+            </li>
+
+            <li class="animate-in">
+                <h4>Activa las notificaciones</h4>
+                <p>No te pierdas ninguna emisión pulsando en <img src="images/twitch/bell.png" alt="Activar notificaciones" style="vertical-align:middle">.</p>
+            </li>
+
+            <li class="question">
+                <h4>¿Quieres apoyar el canal?</h4>
+                <p>Tienes diferentes formas de ayudar a seguir creando contenido
+                    <br>y a mejorar la calidad.
+                </p>
+                <ul class="tabs">
+                    <li><a id="option-twitch-subs" href="#twitch-subs" class="selected">Suscripciones</a></li>
+                    <li><a id="option-twitch-bits" href="#twitch-bits">Bits</a></li>
+                </ul>
+            </li>
+
+            <li id="twitch-subs" class="option-twitch-subs animate-in hidden">
+                <h4>Suscripciones</h4>
+                <p><a href="https://twitch.tv">Twitch</a> tiene un sistema que te permite apoyarme mensualmente con diferentes niveles de suscripción.</p>
+
+                <p class="details">Los diferentes niveles de suscripción te dan ventajas y roles específicos en el <a href="https://discord.gg/qEnjqeG">discord de la comunidad</a>.</p>
+            </li>
+
+            <li id="twitch-bits" class="option-twitch-bits image-right animate-in hidden">
+                <h4>Bits</h4>
+                <p><a href="https://twitch.tv">Twitch</a> te permite apoyarme donando Bits.
+                    <br>Los Bits son una moneda virtual creada por <a href="https://twitch.tv">Twitch</a> para facilitar las donaciones dentro de la plataforma.</p>
+
+                <p class="details">Los Bits son la forma más sencilla de apoyar un canal monetariamente.</p>
+            </li>
+
+            <li class="option-all">
+                <h4>Ya está todo listo!</h4>
+                <p>Todo listo para ver la <a href="http://twitch.tv/johanvonelectrum">próxima emisión</a>.</p>
+                <a href="#tutorial">
+                    <div class="hero-octicon">
+                        <span class="mega-octicon octicon-check"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </section>
 
     <script>
         window.slides = {
-            "coding":"Live Coding",
-            "carpet_farming":"Carpet Farming"
+            "coding": "Live Coding",
+            "carpet_farming": "Carpet Farming"
         }
     </script>
     <script src="js/application.js"></script>
 </body>
+
 </html>
