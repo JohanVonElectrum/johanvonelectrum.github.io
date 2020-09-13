@@ -1,0 +1,137 @@
+{
+  "useCookies": true,
+  "maps": {
+    "nether": {
+      "enabled": true,
+      "hires": {
+        "tileSize": {
+          "x": 32,
+          "z": 32
+        },
+        "scale": {
+          "x": 1,
+          "z": 1
+        },
+        "translate": {
+          "x": 2,
+          "z": 2
+        }
+      },
+      "lowres": {
+        "tileSize": {
+          "x": 400,
+          "z": 400
+        },
+        "scale": {
+          "x": 8,
+          "z": 8
+        },
+        "translate": {
+          "x": 4,
+          "z": 4
+        }
+      },
+      "startPos": {
+        "x": 0,
+        "z": 0
+      },
+      "world": "928e0f60-583d-4250-9aac-cf15a5536974",
+      "ordinal": 2,
+      "skyColor": {
+        "r": 0.16078432,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "ambientLight": 0.6,
+      "name": "Nether"
+    },
+    "world": {
+      "enabled": true,
+      "hires": {
+        "tileSize": {
+          "x": 32,
+          "z": 32
+        },
+        "scale": {
+          "x": 1,
+          "z": 1
+        },
+        "translate": {
+          "x": 2,
+          "z": 2
+        }
+      },
+      "lowres": {
+        "tileSize": {
+          "x": 400,
+          "z": 400
+        },
+        "scale": {
+          "x": 8,
+          "z": 8
+        },
+        "translate": {
+          "x": 4,
+          "z": 4
+        }
+      },
+      "startPos": {
+        "x": 0,
+        "z": 0
+      },
+      "world": "0eca841b-4275-4f6a-9d0c-8722eb023cbe",
+      "ordinal": 0,
+      "skyColor": {
+        "r": 0.49019608,
+        "g": 0.67058825,
+        "b": 1.0
+      },
+      "ambientLight": 0.0,
+      "name": "World"
+    },
+    "end": {
+      "enabled": true,
+      "hires": {
+        "tileSize": {
+          "x": 32,
+          "z": 32
+        },
+        "scale": {
+          "x": 1,
+          "z": 1
+        },
+        "translate": {
+          "x": 2,
+          "z": 2
+        }
+      },
+      "lowres": {
+        "tileSize": {
+          "x": 400,
+          "z": 400
+        },
+        "scale": {
+          "x": 8,
+          "z": 8
+        },
+        "translate": {
+          "x": 4,
+          "z": 4
+        }
+      },
+      "startPos": {
+        "x": 0,
+        "z": 0
+      },
+      "world": "d6647c86-95ae-47bc-aa18-8b57edb75ccd",
+      "ordinal": 1,
+      "skyColor": {
+        "r": 0.03137255,
+        "g": 0.0,
+        "b": 0.0627451
+      },
+      "ambientLight": 0.6,
+      "name": "End"
+    }
+  }
+}
