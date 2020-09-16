@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JohanVonElectrum</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/pages.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <header id="hero-spot">
+        <a href="/"><img src="../JohanVonElectrum.png" alt="JohanVonElectrum" class="logo"></a>
+
+        <h1>JohanTweaks</h1>
+        <h2>El mod que extiende el juego técnico vanilla a una nueva fase.</h2>
+
+        <div class="social-nav">
+            <a href="https://www.twitch.tv/johanvonelectrum" class="button-link">Twitch</a>
+            <a href="https://www.youtube.com/channel/UC7VBv4WwBwNv60IazZVm0HQ" class="button-link">YouTube</a>
+            <a href="https://discord.gg/qEnjqeG" class="button-link">Discord</a>
+            <a href="https://twitter.com/Johan_V_E" class="button-link">Twitter</a>
+        </div>
+
+        <div id="slideshow">
+            <img src="/images/slideshow/live_coding.png" alt="Live Coding" class="slide active" width="893">
+            <img src="/images/slideshow/carpet_farming.png" alt="Carpet Farming" class="slide" width="893">
+        </div>
+    </header>
+
+    <nav>
+        <div><a class="disabled" href="#../bluemap/index.html">Mapa Online</a></div>
+        <div><a href="../mods/index.html">Mods</a></div>
+        <div><a href="https://github.com/JohanVonElectrum" target="blank">GitHub</a></div>
+    </nav>
+
+    <section id="download" class="downloads">
+        <h1>Descargas</h1>
+        <div class="downloads">
+            <a href="../johan-tweaks.jar"><i class="fa fa-download"></i> Descargar JohanTweaks</a>
+        </div>
+    </section>
+
+    <!-- <section id="video" class="video">
+        <h1>Review de <a href="#hero-spot">JohanTweaks</a></h1>
+        <iframe src="https://player.twitch.tv/?channel=johanvonelectrum&parent=johanvonelectrum.github.io"
+            frameborder="0" allowfullscreen="true" scrolling="no" width="853" height="480"></iframe>
+    </section> -->
+
+    <section id="tutorial" class="tutorial">
+        <h1>¿Aún no tienes <a href="#hero-spot">JohanTweaks</a> en tu mundo? Pasate al lado vanilla+.</h1>
+        <h2>Este mod te aporta nuevas mecánicas para extender el juego técnico, <br>renovando el concepto por completo. Comencemos.</h2>
+
+        <ul class="tabs">
+            <li><a href="#install-site" class="selected">Instalar</a></li>
+            <li><a href="#features-site">Características</a></li>
+        </ul>
+
+        <ul id="install-site" class="tutorial-list wrapper active">
+            <li class="question">
+                <h4>¿Conoces <a href="https://multimc.org/">MultiMC</a>?</h4>
+                <p><a href="https://multimc.org/">MultiMC</a> es un launcher alternativo usado frecuentemente por los jugadores de la comunidad técnica.</p>
+
+                <ul class="tabs">
+                    <li><a id="option-multimc" href="#multimc" class="selected">MultiMC</a></li>
+                    <li><a id="option-launcher" href="#launcher">Minecraft Launcher</a></li>
+                </ul>
+
+                <p class="details">Permite mantener cada carpeta .minecraft aislada del resto, evitando conflictos entre las opciones, controles y otros ajustes entre versiones.
+                    <br>Ambos launchers necesitan que uses una cuenta de minecraft. Si aún no tienes, puedes conseguir una <a href="https://minecraft.net">aquí</a>.
+                </p>
+            </li>
+
+            <li class="question option-multimc animate-in">
+                <h4>¿Ya tienes instalado <a href="https://multimc.org/">MultiMC</a>?</h4>
+
+                <ul class="tabs">
+                    <li><a id="multimc-install" href="#install-multimc" class="selected">Descargar</a></li>
+                    <li><a id="multimc-use" href="#use-multimc">Usar</a></li>
+                </ul>
+            </li>
+            <li id="install-multimc" class="option-multimc multimc-install animate-in">
+                <h4>Descarga <a href="https://multimc.org/">MultiMC</a></h4>
+                <p>Dirígete a <a href="https://multimc.org/">multimc.org</a> y descarga la <a href="https://multimc.org/#Download">última release</a> para tu sistema operativo.</p>
+
+                <p class="details">Existe una versión en desarrollo, pero por está misma razón puede no ser estable.</p>
+            </li>
+            <li class="option-multimc multimc-install animate-in">
+                <h4>Instala <a href="https://multimc.org/">MultiMC</a></h4>
+                <p>Descomprime el archivo que has descargado y ejecuta MultiMC.</p>
+
+                <p class="details">Sigue los pasos para instalar todo a tu gusto. Si quieres usar más de 4GB necesitarás <a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=241536_1f5b5a70bf22433b84d0e960903adac8">Java x64</a>.</p>
+            </li>
+            <li class="question option-multimc animate-in">
+                <h4>¿Ya tienes una instancia con <a href="https://fabricmc.net/">Fabric</a>?</h4>
+
+                <ul class="tabs">
+                    <li><a id="multimc-install-instance" href="#install-instance-multimc" class="selected">Crear una nueva</a></li>
+                    <li><a id="multimc-use-instance" href="#use-instance-multimc">Usar una existente</a></li>
+                </ul>
+            </li>
+            <li id="install-instance-multimc" class="option-multimc multimc-install-instance animate-in">
+                <h4>Crea una Instancia</h4>
+                <p>Haz click en <img src="../images/multimc/instance.png" alt="Crear una Instancia" style="vertical-align:middle"> arriba a la izquierda para crear una nueva instancia.
+                    <br>Selecciona la versión 1.16.1 y pulsa Aceptar.
+                </p>
+
+                <img src="../images/multimc/instance_win.png" alt="Nueva Instancia">
+            </li>
+            <li class="option-multimc multimc-install-instance animate-in">
+                <h4>Edita la instancia</h4>
+                <p>Haz click en Editar Instancia en la lista de opciones de la instancia.</p>
+
+                <img src="../images/multimc/instance_edit.png" alt="Editar Instancia">
+            </li>
+            <li class="option-multimc multimc-install-instance animate-in">
+                <h4>Instala <a href="https://fabricmc.net/">Fabric</a></h4>
+                <p>Haz click en Instalar Fabric y selecciona la versión recomendada.</p>
+
+                <img src="../images/multimc/instance_fabric.png" alt="Editar Instancia">
+            </li>
+            <li class="option-multimc animate-in">
+                <h4>Carpeta de mods</h4>
+                <p>Haz click en Carpeta de Minecraft en la lista de opciones de la instancia y abre la carpeta mods.</p>
+
+                <p class="details">Si no existe la carpeta mods, crea una nueva.</p>
+            </li>
+
+            <li class="question option-launcher animate-in">
+                <h4>¿Ya tienes instalado <a href="https://www.minecraft.net/es-es/download">Minecraft Launcher</a>?</h4>
+
+                <ul class="tabs">
+                    <li><a id="launcher-install" href="#install-launcher" class="selected">Descargar</a></li>
+                    <li><a id="launcher-use" href="#use-launcher">Usar</a></li>
+                </ul>
+            </li>
+            <li id="launcher" class="option-launcher launcher-install animate-in">
+                <h4>Descarga <a href="https://www.minecraft.net/es-es/download">Minecraft Launcher</a></h4>
+                <p>Dirígete a <a href="https://minecraft.net/">minecraft.net</a> y descarga el <a href="https://www.minecraft.net/es-es/download">launcher oficial</a> para tu sistema operativo.</p>
+            </li>
+            <li class="question option-launcher animate-in">
+                <h4>¿Ya tienes un perfil con <a href="https://fabricmc.net/">Fabric</a> para la versión 1.16.1?</h4>
+
+                <ul class="tabs">
+                    <li><a id="launcher-install-instance" href="#install-instance-launcher" class="selected">Crear uno nuevo</a></li>
+                    <li><a id="launcher-use-instance" href="#use-instance-launcher">Usar uno existente</a></li>
+                </ul>
+            </li>
+            <li id="install-instance-launcher" class="option-launcher launcher-install-instance animate-in">
+                <h4>Crea un perfil en la 1.16.1</h4>
+                <p>Usando el Minecraft Launcher, crea un nuevo perfil en la versión 1.16.1.</p>
+
+                <p class="details">Es muy importante que antes de continuar abras el juego con este perfil y luego lo cierres.</p>
+            </li>
+            <li class="option-launcher launcher-install-instance animate-in">
+                <h4>Descarga <a href="https://fabricmc.net/">Fabric</a></h4>
+                <p>Descarga <a href="https://fabricmc.net/">Fabric</a> desde su <a href="https://fabricmc.net/use/">web de descargas</a>.</p>
+            </li>
+            <li class="option-launcher launcher-install-instance animate-in">
+                <h4>Instala <a href="https://fabricmc.net/">Fabric</a></h4>
+                <p>Instala <a href="https://fabricmc.net/">Fabric</a> para la 1.16.1 con la última loader version.</p>
+            </li>
+            <li class="option-launcher animate-in">
+                <h4>Carpeta de mods</h4>
+                <p>Abre tu carpeta .minecraft y entra en la carpeta de mods.</p>
+
+                <p class="details">Si no existe la carpeta mods, crea una nueva.</p>
+            </li>
+
+            <li class="option-all">
+                <h4>Descarga <a href="#download">JohanTweaks</a></h4>
+                <p>Haz click en el botón <a href="#download">Descargar JohanTweaks</a> y guardalo en la carpeta de mods.</p>
+            </li>
+        </ul>
+
+        <ul id="features-site" class="tutorial-list wrapper">
+            <li class="animate-in">
+                <h4>Aldeanos</h4>
+                <p>Te siguen al llevar en la mano esmeralda, bloque de esmeralda o ore de esmeralda.</p>
+            </li>
+            <li class="animate-in">
+                <h4>Brujas</h4>
+                <p>Tratan de escapar de los aldeanos.</p>
+            </li>
+            <li class="animate-in">
+                <h4>End Gateways</h4>
+                <p>Usalos sin ningún tipo de "tiempo de espera" o cooldown.</p>
+            </li>
+            <li class="animate-in">
+                <h4>Descomprimir</h4>
+                <p>Diferentes crafteos que te permiten descomprimir bloques.</p>
+
+                <ul>
+                    <li><img src="../images/mods/johan-tweaks/uncrafting-blue_ice.png" alt="Hielo azul"></li>
+                    <li><img src="../images/mods/johan-tweaks/uncrafting-packed_ice.png" alt="Hielo compacto"></li>
+                    <li><img src="../images/mods/johan-tweaks/uncrafting-quartz.png" alt="Cuarzo"></li>
+                    <li><img src="../images/mods/johan-tweaks/uncrafting-nether_wart.png" alt="Verruga abisal"></li>
+                    <li><img src="../images/mods/johan-tweaks/uncrafting-wool.png" alt="Lana"></li>
+                </ul>
+            </li>
+            <li class="animate-in">
+                <h4>Creafteable</h4>
+                <p>Crafteos variados para diferentes objetos.</p>
+
+                <ul>
+                    <li><img src="../images/mods/johan-tweaks/craft-name_tag.png" alt="Etiqueta"></li>
+                    <li><img src="../images/mods/johan-tweaks/craft-saddle.png" alt="Montura"></li>
+                    <li><img src="../images/mods/johan-tweaks/craft-enchanted_golden_apple.png" alt="Manzana de oro encantada"></li>
+                    <li><img src="../images/mods/johan-tweaks/craft-dispenser.png" alt="Dispenser"></li>
+                    <li><img src="../images/mods/johan-tweaks/craft-elytra.png" alt="Elytra"></li>
+                    <li><img src="../images/mods/johan-tweaks/craft-netherite.png" alt="Netherite"></li>
+                </ul>
+            </li>
+            <li class="animate-in">
+                <h4>Cocinable</h4>
+                <p>Recetas de horno para agilizar el trabajo.</p>
+
+                <ul>
+                    <li><img src="../images/mods/johan-tweaks/burn-leather.png" alt="Cuero"></li>
+                    <li><img src="../images/mods/johan-tweaks/burn-glass.png" alt="Cristal tintado"></li>
+                </ul>
+
+                <p class="details">Todos los polvos de concreto generan el cristal tintado de su mismo color.</p>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        window.slides = {
+            "coding": "Live Coding",
+            "carpet_farming": "Carpet Farming"
+        }
+    </script>
+    <script src="../js/application.js"></script>
+</body>
+
+</html>

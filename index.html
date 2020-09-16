@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>JohanVonElectrum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JohanVonElectrum</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" type="text/css" media="screen" href="css/pages.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
@@ -22,7 +23,6 @@
             <a href="https://www.youtube.com/channel/UC7VBv4WwBwNv60IazZVm0HQ" class="button-link">YouTube</a>
             <a href="https://discord.gg/qEnjqeG" class="button-link">Discord</a>
             <a href="https://twitter.com/Johan_V_E" class="button-link">Twitter</a>
-            <a href="https://www.instagram.com/johanvonelectrum/" class="button-link">Instagram</a>
         </div>
 
         <div id="slideshow">
@@ -32,8 +32,9 @@
     </header>
 
     <nav>
-        <div><a href="bluemap/index.html">Mapa Online</a></div>
-        <div><a href="https://github.com/JohanVonElectrum">GitHub</a></div>
+        <div><a class="disabled" href="#bluemap/index.html">Mapa Online</a></div>
+        <div><a href="mods/index.html">Mods</a></div>
+        <div><a href="https://github.com/JohanVonElectrum" target="blank">GitHub</a></div>
     </nav>
 
     <section id="video" class="video">
@@ -44,8 +45,7 @@
 
     <section id="tutorial" class="tutorial">
         <h1>Preparado para comenzar? Disfruta al completo de toda la experiencia JohanVonElectrum.</h1>
-        <h2>Tienes distintas formas de acceder al contenido, <br>creado con vosotros y para vosotros. Comencemos.
-        </h2>
+        <h2>Tienes distintas formas de acceder al contenido, <br>creado con vosotros y para vosotros. Comencemos.</h2>
 
         <ul class="tabs">
             <li><a href="#twitch-site" class="selected">Twitch</a></li>
@@ -56,22 +56,13 @@
 
         <ul id="twitch-site" class="tutorial-list wrapper active">
             <li>
-                <h4>Crea una cuenta</h4>
-                <p>Dirígete a <a href="https://twitch.tv">Twitch</a> y crea una cuenta con el botón de arriba a la derecha.</p>
-
-                <p class="details">Si ya tienes una cuenta inicia sesión con el botón de arriba a la derecha. Si no ves ninguno de los dos botones puede que no estés en el <a href="http://twitch.tv">sitio adecuado</a> o que ya tengas una sesión iniciada.</p>
-            </li>
-
-            <li>
                 <h4>Únete a la comunidad</h4>
                 <p>Entra en <a href="https://twitch.tv/johanvonelectrum">mi canal</a> y haz click en <img src="images/twitch/follow.png" alt="Botón de seguir" style="vertical-align:middle">.</p>
             </li>
-
             <li class="animate-in">
                 <h4>Activa las notificaciones</h4>
                 <p>No te pierdas ninguna emisión pulsando en <img src="images/twitch/bell.png" alt="Activar notificaciones" style="vertical-align:middle">.</p>
             </li>
-
             <li class="question">
                 <h4>¿Quieres apoyar el canal?</h4>
                 <p>Tienes diferentes formas de ayudar a seguir creando contenido
@@ -80,27 +71,185 @@
                 <ul class="tabs">
                     <li><a id="option-twitch-subs" href="#twitch-subs" class="selected">Suscripciones</a></li>
                     <li><a id="option-twitch-bits" href="#twitch-bits">Bits</a></li>
+                    <li><a id="option-twitch-raid" href="#twitch-raid">Raid</a></li>
+                    <li><a id="option-twitch-host" href="#twitch-host">Host</a></li>
                 </ul>
             </li>
+            <li id="twitch-subs" class="option-twitch-subs animate-in">
+                <h4><a href="https://www.twitch.tv/subs/johanvonelectrum">Suscripciones</a></h4>
+                <p><a href="https://twitch.tv">Twitch</a> tiene un sistema que te permite apoyarme mensualmente con diferentes niveles de <a href="https://www.twitch.tv/subs/johanvonelectrum">suscripción</a>.</p>
 
-            <li id="twitch-subs" class="option-twitch-subs animate-in hidden">
-                <h4>Suscripciones</h4>
-                <p><a href="https://twitch.tv">Twitch</a> tiene un sistema que te permite apoyarme mensualmente con diferentes niveles de suscripción.</p>
+                <p class="details">El funcionamiento de las <a href="https://www.twitch.tv/subs/johanvonelectrum">suscripciones</a> se parece al de <a href="https://www.patreon.com/johanvonelectrum">Patreon</a>.</p>
+            </li>
+            <li class="option-twitch-subs animate-in">
+                <h4>Niveles de <a href="https://www.twitch.tv/subs/johanvonelectrum">Suscripción</a></h4>
+                <p>
+                    <ul class="columns">
+                        <li>Nivel 1:
+                            <ul>
+                                <li><p>Rango en <a href="https://discord.gg/qEnjqeG">Discord</a> [Leyenda].</p></li>
+                                <li><p>Reuniones mensuales en <a href="https://discord.gg/qEnjqeG">Discord</a>.</p></li>
+                                <li><p>Sitio reservado en los eventos.</p></li>
+                                <li><p>Estatua en el museo.</p></li>
+                            </ul>
+                        </li>
+                        <li>Nivel 2:
+                            <ul>
+                                <li><p>Rango en <a href="https://discord.gg/qEnjqeG">Discord</a> [Gran Leyenda].</p></li>
+                                <li><p>Acceso a los mods en beta.</p></li>
+                                <li><p>Invitación a los tours mensuales.</p></li>
+                                <li><p>+ Nivel 1.</p></li>
+                            </ul>
+                        </li>
+                        <li>Nivel 3:
+                            <ul>
+                                <li><p>Rango en <a href="https://discord.gg/qEnjqeG">Discord</a> [Leyenda Explosiva].</p></li>
+                                <li><p>Descarga del mapa de survival.</p></li>
+                                <li><p>Añado tu mecánica al <a href="/mods/johan-tweaks.html">JohanTweaks</a>.</p></li>
+                                <li><p>+ Nivel 2.</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
 
-                <p class="details">Los diferentes niveles de suscripción te dan ventajas y roles específicos en el <a href="https://discord.gg/qEnjqeG">discord de la comunidad</a>.</p>
+                <p class="details">Los diferentes niveles de <a href="https://www.twitch.tv/subs/johanvonelectrum">suscripción</a> te dan ventajas y roles específicos en el <a href="https://discord.gg/qEnjqeG">discord de la comunidad</a>.</p>
+            </li>
+            <li class="question option-twitch-subs animate-in">
+                <h4><a href="https://www.twitch.tv/subs/johanvonelectrum">Suscripciónes de Twitch</a></h4>
+                <p>
+                    Adquiriendo una <a href="https://www.twitch.tv/subs/johanvonelectrum">suscripción</a> a mi canal me apoyas mensualmente a poder seguir creando contenido de mejor calidad.
+                    <a href="https://twitch.tv">Twitch</a> te permite regalar <a href="https://www.twitch.tv/subs/johanvonelectrum">suscripciones</a> de cualquier nivel a quien quieras.
+                </p>
+
+                <ul class="tabs">
+                    <li><a id="option-twitch-subs-self" href="#twitch-subs-self" class="selected">Suscribirse</a></li>
+                    <li><a id="option-twitch-bits-gift" href="#twitch-bits-gift">Regalar Suscripciones</a></li>
+                </ul>
+            </li>
+            <li id="twitch-subs-self" class="option-twitch-subs option-twitch-subs-self animate-in">
+                <h4><a href="https://gaming.amazon.com/">Prime Gaming</a></h4>
+                <p><a href="https://twitch.tv">Twitch</a> te permite vincular tu cuenta de <a href="https://www.amazon.es/amazonprime">Amazon Prime</a> para conseguir una suscripción gratuita al mes.</p>
+
+                <p class="details">El nivel de las suscripciones con <a href="https://gaming.amazon.com/">Prime Gaming</a> es equivalente a la suscripción de nivel 1.</p>
+            </li>
+            <li class="option-twitch-subs animate-in">
+                <h4><a href="https://www.twitch.tv/subs/johanvonelectrum">Suscríbete o Regala Suscripciones</a></h4>
+                <p>Entra <a href="https://www.twitch.tv/subs/johanvonelectrum">aquí</a> para comprar una suscripción para ti o para regalar.</p>
+
+                <p class="details">También puedes suscribirte con el botón <img src="images/twitch/subscribe.png" alt="Botón de suscribirse" style="vertical-align:middle"> o si ya eres suscriptor con <img src="images/twitch/subs-gift.png" alt="Botón de regalar suscripción" style="vertical-align:middle"> para regalar suscripciones.</p>
             </li>
 
-            <li id="twitch-bits" class="option-twitch-bits image-right animate-in hidden">
+            <li id="twitch-bits" class="option-twitch-bits image-right animate-in">
                 <h4>Bits</h4>
                 <p><a href="https://twitch.tv">Twitch</a> te permite apoyarme donando Bits.
                     <br>Los Bits son una moneda virtual creada por <a href="https://twitch.tv">Twitch</a> para facilitar las donaciones dentro de la plataforma.</p>
 
                 <p class="details">Los Bits son la forma más sencilla de apoyar un canal monetariamente.</p>
             </li>
+            <li class="option-twitch-bits animate-in">
+                <h4>Consigue Bits</h4>
+                <p>Entra <a href="https://www.twitch.tv/bits">aquí</a> para comprar Bits.
+            </li>
+            <li class="option-twitch-bits animate-in">
+                <h4>Usa tus Bits</h4>
+                <p>Entra en <a href="https://www.twitch.tv/johanvonelectrum">mi canal</a>, y cuando esté emitiendo haz click en <img src="images/twitch/bit-btn.png" alt="Botón de Bits" style="vertical-align:middle"> para seleccionar el emote y la cantidad.</p>
+
+                <p class="details">Puedes modificar la cantidad en el chat una vez seleccionado el emote y una cantidad inicial.</p>
+            </li>
+
+            <li id="twitch-raid" class="option-twitch-raid animate-in">
+                <h4>Raid</h4>
+                <p>Si eres creador de contenido en <a href="https://twitch.tv">Twitch</a>,
+                    <br>al acabar puedes mandarme a tus espectadores escribiendo <div class="terminal">
+                        <div class="command">
+                        <p><span class="path">/</span><span class="prompt">raid</span>johanvonelectrum</p>
+                      </div>
+                    </div></p>
+
+                <p>Recuerda que tienes que escribir este comando antes de finalizar tu emisión.</p>
+
+                <p class="details">Las raids son una bonita forma de crecer, permitiendo unificar nuestras comunidades.
+                    <br>Al hacerme raid puedes compartir mi contenido con tus espectadores y hacer que los mios te conozcan.
+                </p>
+            </li>
+
+            <li id="twitch-host" class="option-twitch-host animate-in">
+                <h4>Host</h4>
+                <p>Si quieres apoyarme haciendo que más gente conozca mi contenido <a href="https://twitch.tv">Twitch</a>,
+                    <br>puedes escribir en el chat de tu canal <div class="terminal">
+                        <div class="command">
+                        <p><span class="path">/</span><span class="prompt">host</span>johanvonelectrum</p>
+                      </div>
+                    </div></p>
+
+                <p class="details">Para entrar en tu canal visita <a href="https://twitch.tv">twitch.tv/</a>tu_nombre_de_usuario
+                    <br>Al hacerme host facilitas que mi contenido sea más recomendado a gente nueva.
+                </p>
+            </li>
 
             <li class="option-all">
                 <h4>Ya está todo listo!</h4>
                 <p>Todo listo para ver la <a href="http://twitch.tv/johanvonelectrum">próxima emisión</a>.</p>
+                <a href="#tutorial">
+                    <div class="hero-octicon">
+                        <span class="mega-octicon octicon-check"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul id="youtube-site" class="tutorial-list wrapper">
+            <li>
+                <h4>Únete a la comunidad</h4>
+                <p>Entra en <a href="https://www.youtube.com/channel/UC7VBv4WwBwNv60IazZVm0HQ">mi canal</a> y haz click en <img src="images/youtube/subscribe.png" alt="Botón de suscribirse" style="vertical-align:middle">.</p>
+            </li>
+            <li class="animate-in">
+                <h4>Activa las notificaciones</h4>
+                <p>No te pierdas ningun video pulsando en <img src="images/youtube/bell.png" alt="Activar notificaciones" style="vertical-align:middle">.</p>
+            </li>
+            <li class="option-all">
+                <h4>Ya está todo listo!</h4>
+                <p>Todo listo para ver el <a href="https://www.youtube.com/channel/UC7VBv4WwBwNv60IazZVm0HQ">próximo video</a>.</p>
+                <a href="#tutorial">
+                    <div class="hero-octicon">
+                        <span class="mega-octicon octicon-check"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul id="discord-site" class="tutorial-list wrapper">
+            <li>
+                <h4>Únete a la comunidad</h4>
+                <p>Forma parte del <a href="https://discord.gg/qEnjqeG">Imperio Electrum</a>.</p>
+            </li>
+            <li class="animate-in">
+                <h4>Activa las notificaciones</h4>
+                <p>Haz click en <img src="images/discord/follow.png" alt="Botón de seguir" style="vertical-align:middle"> en el canal <img src="images/discord/news.png" alt="Botón de seguir" style="vertical-align:middle">.</p>
+            </li>
+            <li class="option-all">
+                <h4>Ya está todo listo!</h4>
+                <p>Estás listo para estar enterado de todo <a href="https://discord.gg/qEnjqeG">lo que se dice</a>.</p>
+                <a href="#tutorial">
+                    <div class="hero-octicon">
+                        <span class="mega-octicon octicon-check"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul id="twitter-site" class="tutorial-list wrapper">
+            <li>
+                <h4>Únete a la comunidad</h4>
+                <p>Entra en <a href="https://twitter.com/Johan_V_E">mi perfil</a> y haz click en <img src="images/twitter/follow.png" alt="Botón de seguir" style="vertical-align:middle">.</p>
+            </li>
+            <li class="animate-in">
+                <h4>Activa las notificaciones</h4>
+                <p>No te pierdas ningún evento haciendo click en <img src="images/twitter/bell.png" alt="Activar notificaciones" style="vertical-align:middle">.</p>
+            </li>
+            <li class="option-all">
+                <h4>Ya está todo listo!</h4>
+                <p>Ahora eres todo un enterado de <a href="https://twitter.com/Johan_V_E">lo que hago</a>.</p>
                 <a href="#tutorial">
                     <div class="hero-octicon">
                         <span class="mega-octicon octicon-check"></span>
